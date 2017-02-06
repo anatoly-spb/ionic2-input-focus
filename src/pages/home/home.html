@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Date</ion-label>
+      <ion-input #input [(ngModel)]="data"></ion-input>
+    </ion-item>
+    <button ion-button block (click)="focusInput(input)">
+        Set Focus via Direct Reference
+  </button>
+    <button ion-button block (click)="focusInputMember()">
+        Set Focus via ViewChild Reference
+  </button>
+  </ion-list>
+</ion-content>
